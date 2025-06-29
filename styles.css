@@ -338,7 +338,7 @@ body {
 
 @media screen and (max-width: 1024px) {
     .section {
-        height: calc(50vh - 3rem);
+        height: calc(30vh - 3rem);
     }
 }
 
