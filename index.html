@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stickman Fighter - Site</title>
+    <link rel="stylesheet" href="styles.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="https://portfolio-two-six-gamma.vercel.app" target="_blank">
+            <h1 class="title">ioNihal</h1>
+        </a>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#landing">PLAY NOW</a></li>
+                <li class="nav-link"><a href="#about">ABOUT</a></li>
+                <li class="nav-link"><a href="#connect">CONNECT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section" id="landing">
+            <h2 class="game-title">Stickman Fighter 2D</h2>
+            <div class="btn-group">
+                <button class="btn" id="play-btn">Play Game</button>
+                <button class="btn" id="git-repo-btn">Github</button>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="about-con">
+                <h2>About the game</h2>
+                <p>
+                    Stickman Fighter 2D is a fast paced, endlessly replayable 1v1 fighting game built on
+                    HTML5 Canvas and vanilla JavaScript. It's a solo passion project aimed at exploring:
+                </p>
+                <ul>
+                    <li>Responsive input on desktop &amp; mobile</li>
+                    <li>Simple AI with adjustable difficulty</li>
+                    <li>Modular animation &amp; physics systems</li>
+                    <li>Integrated sound effects &amp; music</li>
+                    <li>Clean UI with menu, pause, and settings screens</li>
+                </ul>
+                <h2>Controlls</h2>
+                <div class="controlls">
+                    <p>Use <span>A</span> or <span>←</span> and <span>D</span> or <span>→</span> for
+                        Movements</p>
+                </div>
+                <div class="controlls">
+                    <p>Use <span>W</span> or <span>↑</span> for Jumping</p>
+                </div>
+                <div class="controlls">
+                    <p>Use <span>J</span> for Attacking</p>
+                </div>
+                <div class="controlls">
+                    <p>Use <span>K</span> for Blocking</p>
+                </div>
+                <div class="controlls">
+                    <p>Use <span>ESC</span> or Pause Button for Blocking</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section" id="connect">
+            <div class="dev-info-con">
+                <h2>About the Developer</h2>
+                <p>
+                    Developed solo by <a href="https://portfolio-two-six-gamma.vercel.app" target="_blank"><span>Nihal
+                            K</span></a> as a learning project in 2D
+                    canvas gameplay, AI behavior,
+                    and responsive UI/UX. Feedback and contributions are welcome!
+                </p>
+                <h2>Follow me on:</h2>
+                <a href="https://www.github.com/ioNihal" target="_blank" class="social-con">
+                    <img src="./assets/icons/github-mark-white.png" alt="Github" class="icon">
+                    <span>ioNihal</span>
+                </a>
+                <a href="https://www.linkedin.com/in/n1hal" target="_blank" class="social-con">
+                    <img src="./assets/icons/InBug-White.png" alt="LinkedIn" class="icon">
+                    <span>n1hal</span>
+                </a>
+                <a href="https://www.instagram.com/io.nihal" target="_blank" class="social-con">
+                    <img src="./assets/icons/Instagram_Glyph_White.png" alt="Instagram" class="icon">
+                    <span>io.nihal</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="repo-stats">
+                <!-- GitHub badges via shields.io -->
+                <a href="https://github.com/ioNihal/Game2D" target="_blank" title="GitHub stars">
+                    <img src="https://img.shields.io/github/stars/ioNihal/Game2D.svg?style=social&label=Stars"
+                        alt="Stars">
+                </a>
+                <a href="https://github.com/ioNihal/Game2D" target="_blank" title="GitHub forks">
+                    <img src="https://img.shields.io/github/forks/ioNihal/Game2D.svg?style=social&label=Forks"
+                        alt="Forks">
+                </a>
+                <a href="https://github.com/ioNihal/Game2D" target="_blank" title="GitHub watchers">
+                    <img src="https://img.shields.io/github/watchers/ioNihal/Game2D.svg?style=social&label=Watchers"
+                        alt="Watchers">
+                </a>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="current-year"></span> ioNihal. All rights reserved.
+            </div>
+
+            <div class="contact">
+                If you have any claims or concerns, please email
+                <a href="mailto:nihal04x@gmail.com">nihal04x@gmail.com</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+    window.addEventListener('load', () => {
+        const playBtn = document.getElementById('play-btn');
+        const gitRepoBtn = document.getElementById('git-repo-btn');
+
+        playBtn.addEventListener('click', () => {
+            window.open('https://game2-d.vercel.app', '_blanks');
+        })
+
+        gitRepoBtn.addEventListener('click', () => {
+            window.open('https://github.com/ioNihal/Game2D', '_blanks');
+        })
+
+        document.getElementById('current-year').innerHTML = new Date().getFullYear();
+    })
+</script>
+
+</html>
