@@ -337,30 +337,82 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .title {
+        font-size: 3rem;
+    }
     .section {
         height: calc(30vh - 3rem);
+    }
+
+    .game-title {
+        font-size: 4rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 2.3rem;
+    }
+
+    .about-con {
+        width: 50%;
+    }
+    .about-con h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-con p {
+        font-size: 0.9rem;
+    }
+
+    .controlls {
+        margin-bottom: 0.3rem;
+    }
+
+    .dev-info-con {
+        margin-left: 5rem;
+        width: 50%;
+    }
+
+    .dev-info-con h2 {
+        font-size: 2rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .dev-info-con p {
+        font-size: 1.1rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .social-con .icon {
+        width: 48px;
+        height: 48px;
+    }
+    .social-con span {
+        font-size: 1.5rem;
+    }
+
+    .footer-content {
+        font-size: 1.1rem;
+    }
+
+    .repo-stats {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .repo-stats a img {
+        transform: scale(2);
+        padding: 25px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .title {
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    .nav {
-        margin-right: 1rem;
-    }
-
-    .section {
-        height: calc(30vh - 2rem);
-    }
-
-    .game-title {
-        font-size: 1.2rem;
-    }
-
-    .btn {
-        font-size: 1rem;
-    }
+    
 }
