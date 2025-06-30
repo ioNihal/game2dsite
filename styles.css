@@ -26,6 +26,9 @@ body {
     top: 0px;
     left: 0px;
     color: #f0f0f0;
+
+     transition: transform 0.3s ease-in-out;
+    z-index: 9999;
 }
 
 .header a {
@@ -321,13 +324,13 @@ body {
     justify-content: space-between;
     gap: 1rem;
 
-    margin: 4rem auto;
+    margin: 3rem auto 1rem auto;
     color: #d1d1d1;
     font-family: var(--roboto-mono);
 
     font-size: 0.8rem;
 
-    padding-bottom: 100px;
+    padding: 50px;
 }
 
 .contact a {
@@ -340,6 +343,7 @@ body {
     .title {
         font-size: 3rem;
     }
+
     .section {
         height: calc(30vh - 3rem);
     }
@@ -348,57 +352,320 @@ body {
         font-size: 4rem;
     }
 
+
     .nav-link {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1) translateX(0) translateY(0);
     }
 
     .btn {
         font-size: 2.3rem;
     }
 
-    .about-con {
-        width: 50%;
+    #about,
+    #connect {
+        height: calc(75vh - 3rem);
     }
+
+    .about-con {
+        width: 60%;
+    }
+
     .about-con h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .about-con p {
-        font-size: 0.9rem;
+        font-size: 1.7rem;
+    }
+
+    .about-con ul li {
+        text-align: left;
+        font-size: 1.5rem;
     }
 
     .controlls {
         margin-bottom: 0.3rem;
+        text-align: right;
     }
 
     .dev-info-con {
         margin-left: 5rem;
-        width: 50%;
+        width: 60%;
     }
 
     .dev-info-con h2 {
-        font-size: 2rem;
-        margin-top: 0;
+        font-size: 3rem;
+        margin-top: 1rem;
         padding: 0;
     }
 
     .dev-info-con p {
-        font-size: 1.1rem;
+        font-size: 1.7rem;
         margin: 0;
         margin-bottom: 1rem;
         text-align: left;
+    }
+
+    .social-con {
+        gap: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .social-con .icon {
         width: 48px;
         height: 48px;
     }
+
     .social-con span {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .footer-content {
         font-size: 1.1rem;
+        padding-bottom: 0;
+        padding: 50px 0;
+    }
+
+    .repo-stats {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .repo-stats a img {
+        transform: scale(2);
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .section {
+        height: calc(30vh - 2rem);
+    }
+
+    .game-title {
+        font-size: 1.4rem;
+    }
+
+    .nav {
+        margin: 0;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1) translateX(0) translateY(0);
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #about,
+    #connect {
+        height: calc(75vh - 3rem);
+    }
+
+    .about-con {
+        width: 60%;
+        margin-right: 2rem;
+        
+    }
+
+    .about-con h2 {
+        font-size: 1rem;
+    }
+
+    .about-con p {
+        font-size: 0.7rem;
+    }
+
+    .about-con ul li {
+        text-align: left;
+        font-size: 0.6rem;
+    }
+
+    .controlls {
+        margin-bottom: 0.3rem;
+        text-align: left;
+    }
+
+    .controlls p {
+        text-align: left;
+    }
+
+    .controlls span {
+        padding: 2px 5px;
+        font-size: 0.6rem;
+    }
+
+    .dev-info-con {
+        margin-left: 2rem;
+        width: 60%;
+    }
+
+    .dev-info-con h2 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .dev-info-con p {
+        font-size: 0.7rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .social-con {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-con .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-con span {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        font-size: 0.4rem;
+        padding-bottom: 0;
+        padding: 50px 0;
+    }
+
+    .repo-stats {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .repo-stats a img {
+        transform: scale(1);
+        padding: 0;
+    }
+
+    .repo-stats p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media (orientation: landscape) and (max-width: 1024px) {
+
+    .title {
+        font-size: 1.5rem;
+        padding: 1.5 2rem;
+    }
+
+    .section,
+    #about,
+    #connect {
+        height: calc(100vh);
+    }
+
+    .game-title {
+        font-size: 2rem;
+    }
+
+    .nav {
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1) translateX(0) translateY(0);
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .about-con {
+        width: 50%;
+        margin-right: 2rem;
+        text-align: justify;
+    }
+
+    .about-con h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-con p {
+        font-size: 0.7rem;
+    }
+
+    .about-con ul li {
+        font-size: 0.7rem;
+    }
+
+    .controlls {
+        margin-bottom: 0.2rem;
+    }
+
+    .controlls p {
+        font-size: 0.6rem;
+    }
+
+    .dev-info-con {
+        margin-left: 2rem;
+        width: 50%;
+    }
+
+    .dev-info-con h2 {
+        font-size: 1.3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .dev-info-con p {
+        font-size: 0.8rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .social-con {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-con .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-con span {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        padding: 50px 0;
     }
 
     .repo-stats {
@@ -406,13 +673,9 @@ body {
         align-items: center;
         gap: 1rem;
     }
-    
-    .repo-stats a img {
-        transform: scale(2);
-        padding: 25px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    
+    .repo-stats a img {
+        transform: scale(1);
+        padding: 0;
+    }
 }

@@ -3,6 +3,7 @@
 
 <head>
     <title>Stickman Fighter - Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,7 @@
             </div>
         </section>
         <section class="section" id="about">
-            <div class="about-con">
+            <div class="about-con" id="about-con">
                 <h2>About the game</h2>
                 <p>
                     Stickman Fighter 2D is a fast paced, endlessly replayable 1v1 fighting game built on
@@ -135,6 +136,19 @@
         })
 
         document.getElementById('current-year').innerHTML = new Date().getFullYear();
+
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollY = window.scrollY;
+        });
+
     })
 </script>
 
