@@ -341,20 +341,20 @@ body {
 
 @media screen and (max-width: 1024px) {
     .title {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .section {
-        height: calc(30vh - 3rem);
+        height: calc(50vh - 3rem);
     }
 
     .game-title {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
 
     .nav-link {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .nav-link:hover {
@@ -362,12 +362,12 @@ body {
     }
 
     .btn {
-        font-size: 2.3rem;
+        font-size: 1.3rem;
     }
 
     #about,
     #connect {
-        height: calc(75vh - 3rem);
+        height: calc(60vh - 3rem);
     }
 
     .about-con {
@@ -375,16 +375,16 @@ body {
     }
 
     .about-con h2 {
-        font-size: 2.5rem;
+        font-size: 1.2rem;
     }
 
     .about-con p {
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 
     .about-con ul li {
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .controlls {
@@ -392,40 +392,41 @@ body {
         text-align: right;
     }
 
+
     .dev-info-con {
-        margin-left: 5rem;
+        margin-left: 2rem;
         width: 60%;
     }
 
     .dev-info-con h2 {
-        font-size: 3rem;
+        font-size: 1.2rem;
         margin-top: 1rem;
         padding: 0;
     }
 
     .dev-info-con p {
-        font-size: 1.7rem;
+        font-size: 1rem;
         margin: 0;
         margin-bottom: 1rem;
         text-align: left;
     }
 
     .social-con {
-        gap: 1.5rem;
-        margin-bottom: 2rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     .social-con .icon {
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 36px;
     }
 
     .social-con span {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .footer-content {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         padding-bottom: 0;
         padding: 50px 0;
     }
@@ -433,12 +434,11 @@ body {
     .repo-stats {
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 1rem;
     }
 
     .repo-stats a img {
-        transform: scale(2);
-        padding: 25px;
+        transform: scale(1);
     }
 }
 
