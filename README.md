@@ -8,14 +8,6 @@
 
 Stickman Fighter 2D is a fast-paced, endlessly replayable 1v1 fighting game built with HTML5 Canvas and vanilla JavaScript. This project explores responsive input, simple AI, modular animation, and clean UI/UX.
 
-### 🚀 Play Now
-
-[Play the Game](https://game2-d.vercel.app)
-
-### 📸 Screenshots
-
-![Screenshot](./assets/screenshots/gameplay.png)
-
 ### ✨ Features
 
 - Responsive input for desktop & mobile
